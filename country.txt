@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>COUNT</title>
+<body>
+
+<center>
+
+<h2 id="head">Lab Program 4</h2>
+<p id="para">Select a country</p>
+
+<select id="list" onchange="fun();">
+<option>Select a country</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+<option>France</option>
+<option>China</option>
+</select>
+
+
+<p id="capital">Capital</p>
+
+<script>
+function fun(){
+var country=document.getElementById("list").value;
+
+switch(country)
+{
+case "India":	document.getElementById("capital").innerHTML="Delhi";
+		document.getElementById("capital").style.cssText="font-size:20px;color:orange;font-weight:bold";
+		break;
+case "USA":	document.getElementById("capital").innerHTML="Washington";
+		document.getElementById("capital").style.cssText="font-size:20px;color:red;font-weight:bold";
+		break;
+case "UK":	document.getElementById("capital").innerHTML="London";
+		document.getElementById("capital").style.cssText="font-size:20px;color:blue;font-weight:bold";
+		break;
+case "France":	document.getElementById("capital").innerHTML="Paris";
+		document.getElementById("capital").style.cssText="font-size:20px;color:green;font-weight:bold";
+		break;
+case "China":	document.getElementById("capital").innerHTML="Bejing";
+		document.getElementById("capital").style.cssText="font-size:20px;color:brown;font-weight:bold";
+		break;
+}
+
+
+}
+</script>
+
+</center>
+
+</body>
+</html> 

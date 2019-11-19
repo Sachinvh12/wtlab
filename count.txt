@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>COUNT</title>
+<body>
+
+<center>
+
+<h2 id="head">Lab Program 3</h2>
+<textarea rows="5" cols="50" id="textarea" placeholder="Write Something"></textarea><br>
+<input type="button" name="submit" value="submit" onclick="fun();"></input>
+
+<script>
+function fun(){
+var text=document.getElementById("textarea").value;
+
+var numoflines=text.split(/\n+/).length;
+
+var numofwords=text.split(/\s+/).length;
+
+var numofchar= text.length-(numoflines-1);
+
+alert("No of chars : "+numofchar + "\n"+
+	"No of words : "+numofwords + "\n"+
+	"No of lines : "+numoflines );
+
+
+
+
+}
+</script>
+
+</center>
+
+</body>
+</html> 

@@ -1,0 +1,206 @@
+
+<html>
+<head>
+        <title>sign up page</title>
+</head>
+
+<body style="background-image:url(signupbg.jpeg);">
+
+<center>
+<h1 style="color:orange;"> <b> Welcome To Sign Up Page </b> </h1>
+
+<br>
+
+<form name="a">
+
+        <div>
+        First Name:&nbsp <input type = "text" name = "fn"/>
+        </div>
+
+        <br>
+
+        <div>
+          Last Name:&nbsp <input type="text" name="ls"/>
+        </div>
+
+        <br>
+
+        <div>
+         Date of Birth &nbsp
+        <select name="date" >
+         <option>1 </option>
+         <option>2 </option>
+         <option>3 </option>
+         <option>4 </option>
+         <option>5 </option>
+<option>6 </option>
+         <option>7 </option>
+         <option>8 </option>
+
+
+ <option>9 </option>
+         <option>10</option>
+         <option>11</option>
+         <option>12 </option>
+         <option>13 </option>
+         <option>14 </option>
+         <option>15</option>
+         <option>16 </option>
+         <option>17 </option>
+         <option>18 </option>
+         <option>19 </option>
+         <option>20 </option>
+         <option>21 </option>
+         <option>22 </option>
+         <option>23 </option>
+         <option>24 </option>
+         <option>25 </option>
+         <option>26 </option>
+         <option>27 </option>
+         <option>28 </option>
+         <option>29 </option>
+         <option>30 </option>
+         <option>31 </option>
+         </select>
+
+         <select name="month" >
+         <option>Jan </option>
+         <option>Feb </option>
+         <option>Mar </option>
+         <option>Apr </option>
+         <option>May </option>
+         <option>Jun </option>
+         <option>Jul </option>
+         <option>Aug </option>
+         <option>Sep </option>
+ <option>Oct </option>
+         <option>Nov </option>
+         <option>Dec </option>
+        </select>
+
+         <select name="year">
+         <option>1990 </option>
+         <option>1991 </option>
+
+         <option>1992 </option>
+         <option>1993 </option>
+         <option>1994 </option>
+         <option>1995 </option>
+         <option>1996 </option>
+         <option>1997 </option>
+         <option>1998 </option>
+         <option>1999 </option>
+         <option>2000 </option>
+         <option>2001 </option>
+         <option>2002 </option>
+         <option>2003 </option>
+         <option>2004 </option>
+         <option>2005 </option>
+         <option>2006 <option>
+         <option>2007 </option>
+         <option>2008 </option>
+         <option>2009 </option>
+         <option>2010 </option>
+         <option>2011 </option>
+         <option>2012 </option>
+         <option>2013 </option>
+         <option>2014 </option>
+        </select>
+        </div>
+
+        <br />
+
+ <div>
+          Mob Numb:&nbsp <input type="text" name="mob" />
+        </div>
+
+        <br>
+
+        <div>
+         Email id:&nbsp <input type="text" name="emailid" />
+        </div>
+
+        <br>
+
+        <div>
+        <button type="submit" value="submit" onclick="myfun()">sign up</button>
+        </div>
+
+</form>
+
+<script>
+
+        function myfun(){
+                var x=document.forms["a"]["fn"].value;
+                if(x=="")
+                {
+                        alert("Fill the first name");
+                        return false;
+                }
+                if(!/^[A-Za-z]+$/.test(x))
+                {
+                        alert("First Name should contain alphabets only!");
+              
+                }
+
+var l=document.forms["a"]["ls"].value;
+                if(document.a.ls.value=="")
+                {
+                        alert("Fill the last name");
+                        return false;
+                }
+                if(!/^[A-Za-z]+$/.test(l))
+                {
+                        alert("Last Name should contain alphabets only!");
+                        return false;
+                }
+
+                var c=document.forms["a"]["mob"].value;
+                if(document.a.mob.value=="")
+                {
+                        alert("Fill the mobile number");
+                        return false;
+                }
+                if(!/^[0-9]+$/.test(c))
+                {
+                        alert("numbers only!");
+                        return false;
+                }
+                if(document.a.date.value=="")
+                {
+                        alert("Date not selected");
+                        return false;
+                }
+if(document.a.month.value=="")
+                {
+                        alert("Month not selected");
+                        return false;
+                }
+                if(document.a.year.value=="")
+                {
+                        alert("Year not selected");
+                        return false;
+                }
+
+                var xy=document.forms["a"]["emailid"].value;
+
+                var atpos=xy.indexOf("@");
+
+                var dotpos=xy.lastIndexOf(".");
+
+                if(atpos<1||dotpos<atpos+2||dotpos+2>=xy.length)
+                {
+                        alert("enter proper mail id");
+                        return false;
+                }
+                if(xy=="")
+                {
+                        alert("Fill the email id field");
+                        return false;
+                }
+                alert("submitted!!");
+        }
+</script>
+</center>
+</body>
+</html>

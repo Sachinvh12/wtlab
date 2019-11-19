@@ -1,0 +1,16 @@
+
+<html>
+<center>
+
+<body style="background-image:url(comicbg.jpg);">
+
+        <h1> The Comics Store </h1>
+        <marquee> <p> Welcome </p> </marquee>
+        <h2> Available comic books are </h2>
+        <div style="background-color:pink;height:40px;width:650px;">
+                <h3 style="color:blue;"> Iron man,Captain America,Shakthimaan </h3>
+        </div>
+        <img src="comic1.jpg" width="800px" height="250px" </img>
+</center>
+</body>
+</html>
